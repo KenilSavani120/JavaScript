@@ -33,3 +33,28 @@ const myFUnction = function(){
 }
 
 console.log(typeof myObj);
+
+// +++++++++++++++++++++++++++++++++++++++
+
+// stack(primitive) = call by Value      Heap(non primitive) = call by reference
+
+let myYoutubeone = "kenilsavani"
+let myYoutubeTwo = myYoutubeone
+
+
+console.log(myYoutubeTwo);
+
+myYoutubeTwo="savanikenil"
+console.log(myYoutubeTwo);
+
+
+let userOne={
+    email : "abc@gmail.com",
+    upi:"xyz@ybl"
+}
+
+let userTwo=userOne
+userTwo.email ="xyz@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
