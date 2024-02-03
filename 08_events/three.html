@@ -17,16 +17,17 @@
 
    
  
-    document.querySelector('#start'),addEventListener('click' , function(){
-        const sayDate = function(){
-        console.log("hello", Date.now());
-    }
-   })
-   const stopDate =  setInterval(sayDate,1000, (click=start));
+    document.querySelector('#start').addEventListener('click' , function(){
+        const sayDate = setInterval (function(){
+        console.log("hello");
+    },1000);
 
-    document.querySelector('#stop'),addEventListener('click' , function(){     
-    clearInterval(stopDate);   
+    document.querySelector('#stop').addEventListener('click' , function(){     
+    clearInterval(sayDate);   
    })
+
+   })
+   
 
 
    
