@@ -13,13 +13,10 @@
 </body>
 <script>
 
-    
 
-   
- 
     document.querySelector('#start').addEventListener('click' , function(){
         const sayDate = setInterval (function(){
-        console.log("hello");
+        console.log("hello",Date.now());
     },1000);
 
     document.querySelector('#stop').addEventListener('click' , function(){     
@@ -28,8 +25,6 @@
 
    })
    
-
-
    
 </script>
 </html>
